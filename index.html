@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUTRXE BARBER</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#d4af37;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+section{
+    padding:50px;
+}
+
+h2{
+    color:#111;
+    margin-bottom:20px;
+    border-left:5px solid #d4af37;
+    padding-left:10px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.producto{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.producto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.producto h3{
+    margin:15px 0;
+}
+
+.precio{
+    color:green;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+button{
+    background:#d4af37;
+    color:black;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#b8942f;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    max-width:700px;
+    margin:auto;
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+/* Botones flotantes */
+.social-float{
+    position: fixed;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-btn{
+    bottom: 90px;
+}
+
+.instagram-btn{
+    bottom: 20px;
+}
+
+.social-float a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.social-float a:hover{
+    transform: scale(1.1);
+}
+
+.whatsapp-btn a{
+    background: #25D366;
+}
+
+.instagram-btn a{
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<!-- Botón WhatsApp -->
+<div class="social-float whatsapp-btn">
+    <a href="https://wa.me/56984224471" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+<!-- Botón Instagram -->
+<div class="social-float instagram-btn">
+    <a href="https://instagram.com/futrxe_barber" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
+<body>
+
+    <header>
+    <div class="header-content">
+
+        <!-- Espacio para el logo -->
+        <img src="futrxe.png" alt="Logo FUTRXE BARBER" class="logo">
+
+        <div>
+            <h1></h1>
+            <p>Estilo, calidad y profesionalismo para tu imagen.</p>
+        </div>
+
+    </div>
+</header>
+
+<nav>
+    <a href="#bienvenido a la futre barber">bienvenido a la futre barber</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#reservas">Reservar Hora</a>
+</nav>
+
+<section id="bienvenido a la futre barber">
+    <h2> bienvenido a futre barber</h2>
+    <div class="info">
+
+    <div class="card">
+        <h3>bienvenido</h3>
+        <p>
+            ¡Bienvenido a Futre Barber!
+Futre Barber nace con la pasión de ofrecer un servicio de barbería profesional, cercano y de calidad. Como barbero independiente, mi objetivo es brindar una atención personalizada a cada cliente, entendiendo su estilo, sus preferencias y ayudándolo a encontrar el look que mejor lo represente.
+En Futre Barbería, cada corte y arreglo de barba se realiza con dedicación, precisión y atención a los detalles. Más que un servicio, busco crear una experiencia cómoda y de confianza, donde cada persona se sienta bien atendida y salga con la seguridad que da una imagen cuidada.
+Mi compromiso es mantenerme actualizado con las últimas tendencias y técnicas de barbería, sin dejar de lado los estilos clásicos que nunca pasan de moda.
+Te invito a formar parte de esta experiencia; aquí encontrarás profesionalismo, cercanía y un espacio pensado para que te sientas cómodo mientras cuidas tu imagen. ¡Gracias por confiar en Futre Barber y bienvenido a tu barbería de confianza!
+        </p>
+    </div>
+</section>
+
+<section id="nosotros">
+    <h2>Nuestra Empresa</h2>
+
+    <div class="info">
+
+        <div class="card">
+            <h3>Misión</h3>
+            <p>
+                Brindar un servicio de barbería de alta calidad, ofreciendo cortes y cuidados profesionales a precios accesibles para todo tipo de personas; garantizando una atención cercana, respetuosa y personalizada; con el objetivo de que cada cliente se sienta satisfecho, cómodo y conforme con su imagen.
+
+                
+                
+                
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Visión</h3>
+            <p>
+                Ser una barbería reconocida por ofrecer servicios de calidad a precios cada vez más accesibles; buscando constantemente optimizar nuestros costos sin sacrificar la excelencia, el estilo ni la atención al cliente. Nuestra visión es que el cuidado personal y una buena imagen estén al alcance de todos; demostrando que es posible ofrecer un servicio bueno, bonito y económico; porque verse bien y sentirse arreglado es algo importante para cada persona.
+
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Valores</h3>
+            <ul>
+                <li>Calidad en cada servicio.</li>
+                <li>Atención cercana y personalizada.</li>
+                <li>Profesionalismo y compromiso.</li>
+                <li>Innovación y actualización constante.</li>
+                <li>Respeto y confianza hacia nuestros clientes.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="productos">
+    <h2>Productos Destacados</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+            <img src="polvotis.jpg" alt="Polvo Texturizante">
+            <h3>Polvo Texturizante</h3>
+            <p>Volumen y textura natural para tu peinado.</p>
+            <p class="precio">$12.990</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="ceramatedovish.png" alt="Cera para Cabello">
+            <h3>Cera para Cabello</h3>
+            <p>Fijación fuerte y brillo profesional.</p>
+            <p class="precio">$9.990</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="salt water.jpg" alt="salt water">
+            <h3>salt water</h3>
+            <p>Acabado natural sin brillo.</p>
+            <p class="precio">$10.990</p>
+            <button>Comprar</button>
+        </div>
+
+        <div class="producto">
+            <img src="ceramatovich.webp" alt="cera mate">
+            <h3>cera mate</h3>
+            <p>Limpieza profunda y cuidado capilar.</p>
+            <p class="precio">$8.990</p>
+            <button>Comprar</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="reservas">
+    <h2>Reserva tu Hora</h2>
+
+    <form>
+        <label>Nombre Completo</label>
+        <input type="text" placeholder="Ingrese su nombre" required>
+
+        <label>Correo Electrónico</label>
+        <input type="email" placeholder="ejemplo@correo.com" required>
+
+        <label>Teléfono</label>
+        <input type="tel" placeholder="+56 9 84224471" required>
+
+        <label>Servicio</label>
+        <select required>
+            <option value="">Seleccione un servicio</option>
+            <option>Corte Clásico</option>
+            <option>Fade</option>
+            <option>Corte + Barba</option>
+            <option>Perfilado de Barba</option>
+        </select>
+
+        <label>Fecha</label>
+        <input type="date" required>
+
+        <label>Hora</label>
+        <input type="time" required>
+
+        <button type="submit">Reservar Hora</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 FUTRXE BARBER | de Diego Meneses Quiroz.</p>
+</footer>
+
+</body>
+</html>
